@@ -4,35 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginpage.css">
-    <title>Edit Profile</title>
+    <title>My profile page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .gradient-custom {
+/* fallback for old browsers */
+background: #f6d365;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+}
+    </style>
 </head>
 <body>
-    <div class="parent">
-        
-        <div class="container">
-            <div class="header">Edit Profile</div>
-            <div class="form-group">
-                <label>User Name: </label>
-                <input placeholder="User Name" type="text" class="input-field"></input>
-            </div>
-            <div class="form-group">
-                <label>Mobile No: </label>
-                <input placeholder="Mobile No" type="text"  class="input-field"></input>
-            </div>
-            <div class="form-group">
-                <label>Email: </label>
-                <input placeholder="Email" type="text" class="input-field"></input>
-            </div>
-            <div class="form-group">
-                <label>Profile Picture: </label>
-                <input type="image" src="" alt="Upload Profile Picture" >
-            </div>
-            <div class="buttondiv">
-            <button type="submit">Change</button>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="afterlogin.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="require_item.html">Requests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Items</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-    </div>
+      </nav>
+      <section class="vh-100" style="background-color: #f4f5f7;">
+        <div class="parent">
+            <div class="container">
+                <div class="header">Edit Profile</div>
+                <div class="form-group">
+                    <label>Name: </label>
+                    <input placeholder="Name" type="text" class="input-field"></input>
+                </div>
+                <div class="form-group">
+                    <label>Mobile No: </label>
+                    <input placeholder="Mobile No" type="text"  class="input-field"></input>
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input placeholder="Email" type="text" class="input-field"></input>
+                </div>
+                <div class="form-group">
+                    <label>Profile Picture: </label>
+                    <input type="image" src="" alt="Upload Profile Picture" >
+                </div>
+                <div class="buttondiv">
+                <button type="submit">Change</button>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
